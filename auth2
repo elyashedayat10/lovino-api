@@ -1,0 +1,201 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2022.2.1"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2022-06-29T18:23:50.157Z",
+				"time": 32.594,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/accounts/api/verify/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "multipart/form-data"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "multipart/form-data",
+						"text": "",
+						"params": [
+							{
+								"name": "phone_number",
+								"value": "09364912058"
+							},
+							{
+								"name": "code",
+								"value": "862489"
+							}
+						]
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 28 Jun 2022 19:15:21 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.7.6"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "Content-Length",
+							"value": "122"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 122,
+						"mimeType": "application/json",
+						"text": "{\"is_done\":true,\"message\":\"کاربر با موفیت ساخته شد\",\"token\":\"824d05fb0c86b353a7990646c7dda74dd6289d4c\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 32.594,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "verify api view"
+			},
+			{
+				"startedDateTime": "2022-06-29T18:23:50.157Z",
+				"time": 364.97,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:8000/accounts/api/auth/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "multipart/form-data"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "multipart/form-data",
+						"text": "",
+						"params": [
+							{
+								"name": "phone_number",
+								"value": "09364912058"
+							}
+						]
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Date",
+							"value": "Tue, 28 Jun 2022 19:09:07 GMT"
+						},
+						{
+							"name": "Server",
+							"value": "WSGIServer/0.2 CPython/3.7.6"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"name": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"name": "Content-Length",
+							"value": "91"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"content": {
+						"size": 91,
+						"mimeType": "application/json",
+						"text": "{\"is_done\":true,\"message\":\"پیام ارسال شد\",\"data\":{\"phone_number\":\"09364912058\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 364.97,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "auth api view"
+			}
+		]
+	}
+}
